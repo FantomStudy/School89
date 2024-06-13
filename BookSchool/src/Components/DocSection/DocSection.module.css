@@ -1,0 +1,92 @@
+.docSection {
+  margin: 5rem 0;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textBlock {
+  width: 50%;
+}
+.head {
+  font-size: 2.6rem;
+}
+.description {
+  color: var(--UnActive);
+  margin: 1.8rem 0;
+  font-weight: 500;
+}
+.greenText {
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+  color: var(--Primary);
+  transition: 0.5s ease-in-out;
+  width: fit-content;
+}
+.greenText:hover {
+  transform: scale(1.2);
+}
+.docImg{
+  width: 600px;
+  border: 1px solid var(--UnActive);
+  border-radius: 1.2rem;
+}
+@media (max-width: 1024px) {
+  .docsSection {
+    flex-direction: column;
+    grid-gap: 3rem;
+  }
+  .textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .textBlock {
+    width: 70%;
+  }
+  .head {
+    font-size: 2.8rem;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .greenText {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .docImg {
+    width: 350px;
+  }
+  .docsSection {
+    margin: 5rem 0;
+  }
+  .textBlock {
+    width: 100%;
+  }
+  .head {
+    font-size: 2.8rem;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .greenText {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .docImg {
+    width: 300px;
+  }
+  .head {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .greenText {
+    font-size: 18px;
+  }
+}
