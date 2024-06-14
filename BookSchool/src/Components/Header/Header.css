@@ -4,9 +4,6 @@
   height: max-content;
   justify-content: space-between;
 }
-/* .headerLogo {
-  width: 280px;
-} */
 .headerNav {
   width: 100%;
   padding: 0rem;
@@ -24,43 +21,17 @@ header li:hover {
   color: var(--Dark);
   transform: scale(1.2);
 }
-/* .headerRight {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 20%;
-} */
-/* .headerRight a, .mobileAuthBtn a {
-  color: var(--UnActive);
-  transition: 0.5s;
-} */
-/* .headerRight a:hover, .mobileAuthBtn a:hover{
-  transform: scale(1.2);
-  color: var(--Primary);
-} */
-.burgerBtn,
-.mobileAuthBtn {
+.burgerBtn{
   display: none;
-}
-@media (max-width: 1440px) {
-  .headerLogo {
-    width: 250px;
-  }
 }
 @media (max-width: 1024px) {
   .headerLogo {
-    width: 180px;
-  }
-  .headerRight {
-    width: 22%;
+    width: 50px;
   }
 }
 @media (max-width: 768px) {
-  .headerLogo {
-    width: 200px;
-  }
-  .headerRight {
-    display: none;
+  .header{
+    justify-content: end;
   }
   .burgerBtn {
     display: flex;
@@ -116,28 +87,9 @@ header li:hover {
   .headerNav.active {
     transform: translateX(0);
   }
-  .mobileAuthBtn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-gap: 4rem;
-    a,
-    Button {
-      font-size: 25px;
-    }
-  }
 }
 @media (max-width: 500px) {
   .headerNav {
     width: 100%;
-    li {
-      font-size: 28px;
-    }
-  }
-  .mobileAuthBtn {
-    a,
-    Button {
-      font-size: 28px;
-    }
   }
 }

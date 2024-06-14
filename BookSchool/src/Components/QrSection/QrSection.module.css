@@ -41,9 +41,18 @@
   color: var(--UnActive);
   font-weight: 500;
 }
+@media (max-width: 1440px) {
+  .qr{
+    width: 38%;
+  }
+}
 @media (max-width: 1024px) {
-
+  .qr{
+    width: 45%;
+  }
 }
 @media (max-width: 768px) {
-
+  .qr{
+    width: 75%;
+  }
 }

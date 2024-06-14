@@ -21,10 +21,6 @@ export default function Footer() {
             <Link to="contact" smooth={true}>
               <li>Контакты</li>
             </Link>
-            <div className="mobileAuthBtn">
-              <a href="">Log in</a>
-              <Button type="fill">Join us</Button>
-            </div>
           </ul>
         </div>
         <div className="contact">

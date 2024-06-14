@@ -60,6 +60,13 @@ body {
   font-size: 28px;
   color: var(--UnActive);
   font-weight: 500;
+  button{
+    background-color: var(--Primary);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+  }
 }
 .pdfRow {
   display: flex;
@@ -72,6 +79,7 @@ body {
 .pdfRow:hover {
   color: var(--Dark);
 }
+
 @media (max-width: 1440px) {
   #root {
     max-width: 1240px;
@@ -81,10 +89,44 @@ body {
   #root {
     max-width: 768px;
   }
+  section#nextDoc{
+    flex-direction: column  ;
+  }
 }
 @media (max-width: 768px) {
   #root {
     max-width: 500px;
+  }
+  .pdfRow {
+    grid-gap: 5px;
+    img{
+      width: 50px;
+    }
+    p{
+      
+      font-size: 14px;
+    }
+  }
+  .p-accordion-content button{
+      border-radius: 10px;
+      padding: 5px 8px;
+  }
+  .p-accordion-header-link {
+    .p-accordion-header-text {
+      font-size: 25px;
+      color: var(--UnActive);
+      font-weight: 400;
+      transition: font-weight 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .p-accordion-header-text:hover {
+      color: var(--Dark);
+      font-weight: 500;
+    }
+    .p-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--UnActive);
+    }
   }
 }
 @media (max-width: 500px) {

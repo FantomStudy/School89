@@ -54,11 +54,12 @@
 }
 @media (max-width: 1024px) {
   .introSection {
-    margin-top: 1rem;
+    margin-top: 0rem;
     flex-direction: column;
   }
   .head {
     font-size: 2.8rem;
+    margin-top: 0;
   }
   .greenText {
     font-size: 16px;
@@ -70,6 +71,7 @@
   }
   .textBlock {
     text-align: center;
+    width: 90%;
   }
   .buttons {
     grid-gap: 0;
@@ -113,21 +115,12 @@
   }
   .buttons button {
     font-size: 18px;
-    padding: 1.6rem 3.2rem;
+    padding: 1.2rem 2rem;
   }
   .introImg {
     width: 400px;
   }
-  .aboutBlock {
-    width: 400px;
-    align-items: center;
-  }
-  .aboutImg {
-    width: 120px;
-  }
-  .aboutHead {
-    font-size: 36px;
-  }
+  
   .aboutDescription {
     font-size: 28px;
     padding-top: 2rem;

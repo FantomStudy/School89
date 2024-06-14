@@ -1,6 +1,5 @@
 import "./Header.css";
 import { useState } from "react";
-import Button from "../Buttons/Button";
 import { Link } from "react-scroll";
 
 export default function Header() {
@@ -29,24 +28,13 @@ export default function Header() {
           <Link to="contact" smooth={true}>
             <li onClick={() => setOpen(false)}>Контакты</li>
           </Link>
-          <div className="mobileAuthBtn">
-            <a href="">Log in</a>
-            <Button type="fill">Join us</Button>
-          </div>
         </ul>
-
-        {/* <div className="headerRight">
-          <a href="/registration">Log in</a>
-          <Button type="fill">Join us</Button>
-        </div> */}
-
-        <button
-          className={`burgerBtn ${isOpen ? "active" : ""}`}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button className={`burgerBtn ${isOpen ? "active" : ""}`} onClick={()=>{setOpen(!isOpen)}}>
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
+        
       </header>
     </>
   );

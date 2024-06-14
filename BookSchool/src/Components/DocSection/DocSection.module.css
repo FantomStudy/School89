@@ -32,10 +32,19 @@
   border: 1px solid var(--UnActive);
   border-radius: 1.2rem;
 }
+@media (max-width: 1440px) {
+  .docImg{
+    width: 400px;
+  }
+}
 @media (max-width: 1024px) {
-  .docsSection {
-    flex-direction: column;
-    grid-gap: 3rem;
+  .docSection {
+    flex-direction: column-reverse;
+    grid-gap: 1.5rem;
+  }
+ 
+  .docImg{
+    width: 450px;
   }
   .textBlock {
     display: flex;
@@ -44,13 +53,14 @@
     text-align: center;
   }
   .textBlock {
-    width: 70%;
+    width: 80%;
   }
   .head {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .description {
     font-size: 18px;
+    margin: 15px 0;
   }
   .greenText {
     font-size: 18px;
