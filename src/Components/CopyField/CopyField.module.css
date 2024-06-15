@@ -1,0 +1,81 @@
+.copyForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.copyForm:hover {
+  background-color: color-mix(in oklab, #eeeeee, gray 8%);
+}
+.copyText {
+  border: none;
+  background-color: transparent;
+  width: 95%;
+  outline: none;
+  cursor: pointer;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 6px;
+  width: 100%;
+  text-align: left;
+  p {
+    color: var(--UnActive);
+    font-weight: 350;
+    font-size: 16px;
+  }
+  input {
+    color: var(--Dark);
+    font-weight: normal;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .left {
+    p {
+      font-size: 14px;
+    }
+    input {
+      font-size: 20px;
+    }
+  }
+  .copyForm {
+    margin-bottom: 3rem;
+    img {
+      width: 35px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .left {
+    p {
+      font-size: 14px;
+    }
+    input {
+      font-size: 18px;
+    }
+  }
+  .copyForm {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .left {
+    p {
+      font-size: 12px;
+    }
+    input {
+      font-size: 15px;
+    }
+  }
+  .copyForm img {
+    width: 30px;
+  }
+}
