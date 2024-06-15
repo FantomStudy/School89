@@ -17,7 +17,7 @@ body {
 #root {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
   font-weight: bold;
   color: var(--Dark);
 }
@@ -60,7 +60,7 @@ body {
   font-size: 28px;
   color: var(--UnActive);
   font-weight: 500;
-  button{
+  button {
     background-color: var(--Primary);
     outline: none;
     border: none;
@@ -75,6 +75,7 @@ body {
   margin-top: 1.2rem;
   color: var(--UnActive);
   transition: color 0.3s ease-in-out;
+  overflow: hidden;
 }
 .pdfRow:hover {
   color: var(--Dark);
@@ -89,27 +90,30 @@ body {
   #root {
     max-width: 768px;
   }
-  section#nextDoc{
-    flex-direction: column  ;
+  section#nextDoc {
+    flex-direction: column;
   }
-}
+  .pdfRow img {
+      width: 50px;
+    }
+  }
+
 @media (max-width: 768px) {
   #root {
-    max-width: 500px;
+    max-width: 85%;
   }
   .pdfRow {
     grid-gap: 5px;
-    img{
+    img {
       width: 50px;
     }
-    p{
-      
-      font-size: 14px;
+    p {
+      font-size: 16px;
     }
   }
-  .p-accordion-content button{
-      border-radius: 10px;
-      padding: 5px 8px;
+  .p-accordion-content button {
+    border-radius: 10px;
+    padding: 5px 8px;
   }
   .p-accordion-header-link {
     .p-accordion-header-text {
@@ -131,6 +135,36 @@ body {
 }
 @media (max-width: 500px) {
   #root {
-    max-width: 380px;
+    max-width: 85%;
+  }
+  .pdfRow {
+    grid-gap: 10px;
+    img {
+      width: 40px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .p-accordion-content button {
+    border-radius: 10px;
+    padding: 5px 8px;
+  }
+  .p-accordion-header-link {
+    .p-accordion-header-text {
+      font-size: 25px;
+      color: var(--UnActive);
+      font-weight: 400;
+      transition: font-weight 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .p-accordion-header-text:hover {
+      color: var(--Dark);
+      font-weight: 500;
+    }
+    .p-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--UnActive);
+    }
   }
 }

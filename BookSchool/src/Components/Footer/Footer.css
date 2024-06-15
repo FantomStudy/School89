@@ -40,3 +40,16 @@ footer li:hover {
   transform: scale(1.2);
   font-weight: 600;
 }
+
+@media (max-width: 500px) {
+  .footer{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    grid-gap: 2rem;
+    ul{
+      align-items: center;
+    }
+  }
+}
+

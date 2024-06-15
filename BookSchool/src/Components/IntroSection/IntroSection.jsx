@@ -12,7 +12,7 @@ export default function IntroSection() {
             Приветствуем вас!
           </h1>
           <p className={styles.description}>
-            На данном сайте Вы можете ознакомиться с общей информацией и документами нашей школы.
+            На данном сайте Вы можете ознакомиться с общей информацией и документами нашей общественной организации.
           </p>
           <div className={styles.buttons}>
             <Link to="docs" smooth={true}>

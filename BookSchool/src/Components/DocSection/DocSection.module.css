@@ -40,11 +40,12 @@
 @media (max-width: 1024px) {
   .docSection {
     flex-direction: column-reverse;
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
+    padding-top: 3rem;
+    margin: 1rem 0;
   }
- 
   .docImg{
-    width: 450px;
+    width: 500px;
   }
   .textBlock {
     display: flex;
@@ -67,20 +68,23 @@
   }
 }
 @media (max-width: 768px) {
-  .docImg {
-    width: 350px;
+  .docSection{
+    padding-top: 8rem;
+    grid-gap: 5rem;
   }
-  .docsSection {
-    margin: 5rem 0;
+  .docImg {
+    width: 450px;
   }
   .textBlock {
     width: 100%;
+    grid-gap: 1.5rem;
   }
   .head {
     font-size: 2.8rem;
   }
   .description {
     font-size: 20px;
+    margin: 0;
   }
   .greenText {
     font-size: 20px;
@@ -94,9 +98,9 @@
     font-size: 2.5rem;
   }
   .description {
-    font-size: 18px;
+    font-size: 16px;
   }
   .greenText {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

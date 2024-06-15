@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 .greenText {
   color: var(--Primary);
@@ -32,30 +32,15 @@
     font-size: 20px;
     margin: 2rem 0;
   }
-
   .introImg {
     width: 500px;
-  }
-  .row {
-    margin-top: -1.5rem;
-  }
-  .aboutBlock {
-    width: 270px;
-  }
-  .aboutImg {
-    width: 70px;
-  }
-  .aboutHead {
-    font-size: 24px;
-  }
-  .aboutDescription {
-    padding-top: 1rem;
   }
 }
 @media (max-width: 1024px) {
   .introSection {
-    margin-top: 0rem;
     flex-direction: column;
+    grid-gap: 1rem;
+    margin: 0 ;
   }
   .head {
     font-size: 2.8rem;
@@ -80,120 +65,50 @@
       font-size: 14px;
     }
   }
-  .row {
-    margin-top: 0;
-    flex-direction: column;
-    align-items: center;
-    grid-gap: 3rem;
-  }
-  .aboutBlock {
-    width: 500px;
-    align-items: center;
-  }
-  .aboutImg {
-    width: 140px;
-  }
-  .aboutHead {
-    font-size: 42px;
-  }
-  .aboutDescription {
-    font-size: 30px;
-    padding-top: 2rem;
-  }
 }
 @media (max-width: 768px) {
+  .introSection{
+    grid-gap: 5rem;
+  }
+  .buttons button{
+    font-size: 16px;
+    padding: 1.2rem;
+  }
   .head {
     font-size: 4.5rem;
+    margin: 0;
   }
   .greenText {
     font-size: 20px;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
   }
   .description {
     font-size: 20px;
-    margin: 1.5rem 0;
-  }
-  .buttons button {
-    font-size: 18px;
-    padding: 1.2rem 2rem;
+    margin: 2rem 0;
   }
   .introImg {
-    width: 400px;
-  }
-  
-  .aboutDescription {
-    font-size: 28px;
-    padding-top: 2rem;
+    width: 450px;
   }
 }
 @media (max-width: 500px) {
   .head {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .greenText {
     font-size: 18px;
   }
-  .description {
-    font-size: 18px;
-  }
-  .buttons button {
-    font-size: 16px;
-    padding: 1.2rem 2rem;
-  }
-  .introImg {
-    width: 300px;
-  }
-  .row {
-    grid-gap: 2rem;
-  }
-  .aboutBlock {
-    width: 300px;
-    padding: 1rem;
-    align-items: center;
-  }
-  .aboutImg {
-    width: 80px;
-  }
-  .aboutHead {
-    font-size: 25px;
-  }
-  .aboutDescription {
-    font-size: 18px;
-  }
-}
-@media (max-width: 375px) {
-  .head {
-    font-size: 3.2rem;
-  }
-  .greenText {
-    font-size: 16px;
+  .textBlock{
+    width: 100%;
   }
   .description {
     font-size: 16px;
   }
   .buttons button {
     font-size: 14px;
-    padding: 1rem 1.5rem;
+    padding: 1rem 5px;
   }
   .introImg {
     width: 300px;
   }
-  .row {
-    grid-gap: 2rem;
-  }
-  .aboutBlock {
-    width: 250px;
-    padding: 1rem;
-    align-items: center;
-  }
-  .aboutImg {
-    width: 60px;
-  }
-  .aboutHead {
-    font-size: 22px;
-  }
-  .aboutDescription {
-    font-size: 16px;
-    padding-top: 2rem;
-  }
 }
+
