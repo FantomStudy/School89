@@ -12,9 +12,7 @@ export default function Header() {
           onClick={() => setOpen(false)}
         >
           <li>
-            <a href="/">
-              <img className="headerLogo" src="LogoClear.svg" alt=""/>
-            </a>
+            <img className="headerLogo" src="LogoClear.svg" alt="" />
           </li>
           <Link to="home" smooth={true}>
             <li onClick={() => setOpen(false)}>Главная</li>
@@ -29,12 +27,16 @@ export default function Header() {
             <li onClick={() => setOpen(false)}>Контакты</li>
           </Link>
         </ul>
-        <button className={`burgerBtn ${isOpen ? "active" : ""}`} onClick={()=>{setOpen(!isOpen)}}>
-            <span></span>
-            <span></span>
-            <span></span>
+        <button
+          className={`burgerBtn ${isOpen ? "active" : ""}`}
+          onClick={() => {
+            setOpen(!isOpen);
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        
       </header>
     </>
   );
