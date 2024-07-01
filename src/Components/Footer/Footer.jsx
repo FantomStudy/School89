@@ -27,11 +27,11 @@ export default function Footer() {
           <h1>Контакты</h1>
           <ul>
             <li>
-              <a href="tel:+7(3532)43-06-61">(3532)43-06-61</a>
+              <a href="tel:+79877955477">+7(9877)95-54-77</a>
               <img className="iconFoot" src="tel.svg" alt="" />
             </li>
             <li>
-              <a href="mailto:89@orenschool.ru">89@orenschool.ru</a>
+              <a href="mailto:omoo_89@mail.ru">omoo_89@mail.ru</a>
               <img className="iconFoot" src="mail.svg" alt="" />
             </li>
           </ul>

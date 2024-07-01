@@ -7,7 +7,6 @@ export default function IntroSection() {
     <>
       <section className={styles.introSection}>
         <div className = {styles.textBlock}>
-          <p className={styles.greenText}>МОАУ "СОШ №89"</p>
           <h1 className={styles.head}>
             Приветствуем вас!
           </h1>
@@ -23,7 +22,7 @@ export default function IntroSection() {
             </Link>
           </div>
         </div>
-        <img className={styles.introImg} src="Intro.svg" alt="" />
+        <img className={styles.introImg} src="LogoClear.svg" alt="" />
       </section>
     </>
   );

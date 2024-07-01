@@ -28,13 +28,13 @@
 .greenText:hover {
   transform: scale(1.2);
 }
-.docImg{
+.docImg {
   width: 600px;
   border: 1px solid var(--UnActive);
   border-radius: 1.2rem;
 }
 @media (max-width: 1440px) {
-  .docImg{
+  .docImg {
     width: 400px;
   }
 }
@@ -45,7 +45,7 @@
     padding-top: 3rem;
     margin: 1rem 0;
   }
-  .docImg{
+  .docImg {
     width: 500px;
   }
   .textBlock {
@@ -69,7 +69,7 @@
   }
 }
 @media (max-width: 768px) {
-  .docSection{
+  .docSection {
     padding-top: 8rem;
     grid-gap: 5rem;
   }
@@ -94,6 +94,20 @@
 @media (max-width: 500px) {
   .docImg {
     width: 300px;
+  }
+  .head {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .greenText {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .docImg {
+    width: 250px;
   }
   .head {
     font-size: 2.5rem;

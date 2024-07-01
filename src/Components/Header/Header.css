@@ -21,10 +21,10 @@ header li:hover {
   color: var(--Dark);
   transform: scale(1.2);
 }
-.burgerBtn{
+.burgerBtn {
   display: none;
 }
-.headerLogo{
+.headerLogo {
   width: 110px;
 }
 @media (max-width: 1024px) {
@@ -33,10 +33,10 @@ header li:hover {
   }
 }
 @media (max-width: 768px) {
-  .header{
+  .header {
     justify-content: end;
   }
-  .headerLogo{
+  .headerLogo {
     width: 150px;
   }
   .burgerBtn {
@@ -98,5 +98,13 @@ header li:hover {
 @media (max-width: 500px) {
   .headerNav {
     width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .headerNav {
+    grid-gap: 5rem;
+    li {
+      font-size: 22px;
+    }
   }
 }
